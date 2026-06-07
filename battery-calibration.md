@@ -30,8 +30,6 @@ The Lite uses a smaller button cell than the Ultra, but both variants use the sa
   | `critical` | red | 2 extra blinks |
 
 - If the reported percentage dips below `100%` immediately after a full charge, the curve reference is too high for that board.
-- A reading around `3160 mV` would not be consistent with a fully charged single-cell LiPo, so treat that value as a typo unless you have board-specific evidence to the contrary.
-
 ## Notes
 
 - Battery reads are most reliable after wake-up, once the analog path has settled.
