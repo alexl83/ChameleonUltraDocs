@@ -308,7 +308,7 @@ See [[Battery calibration|battery-calibration]] for the recommended procedure an
 * Response: 4 bytes, `voltage[2]|percentage|condition`. Voltage: U16 in Network byte order.
 * CLI: cf `hw battery`
 
-Notes: `condition` is a compact battery health code derived from the measured voltage and percentage. See [[Battery calibration|battery-calibration]] for the recommended procedure and LED health mapping.
+Notes: `condition` is a compact battery condition hint derived from the measured voltage and percentage. It is not a direct state-of-health measurement based on true battery capacity. See [[Battery calibration|battery-calibration]] for the recommended procedure and LED condition mapping.
 ### 2000: HF14A_SCAN
 * Command: no data
 * Response: N bytes: `tag1_data|tag2_data|...` with each tag: `uidlen|uid[uidlen]|atqa[2]|sak|atslen|ats[atslen]`. UID, ATQA, SAK and ATS as bytes.
