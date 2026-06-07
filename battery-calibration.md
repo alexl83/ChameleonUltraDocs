@@ -16,7 +16,8 @@ The Lite uses a smaller button cell than the Ultra, but both variants use the sa
 
 - The full-charge voltage should be stable across repeated reads.
 - The `hw battery` command should show `100%` once the settled full-charge voltage is reached.
-- The same command now prefers an extended battery-info response and prints a qualitative `condition` hint (`excellent`, `good`, `fair`, `low`, or `critical`) based on the measured voltage and percentage.
+- The protocol also exposes `GET_BATTERY_INFO_EX`, which adds a compact `condition` field to the standard battery payload.
+- The same `hw battery` command now prefers an extended battery-info response and prints a qualitative `condition` hint (`excellent`, `good`, `fair`, `low`, or `critical`) based on the measured voltage and percentage.
 - On-device, the battery screen now uses the same health state to color the bar and adds short blink pulses for `low` and `critical` states.
 - LED mapping on the device is:
 
